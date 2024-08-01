@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ระบบโหวตในชั้นเรียน</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 </head>
 <body>
     <div id="app">
         <h1>ระบบโหวตในชั้นเรียน</h1>
         <div id="login">
             <input type="text" id="studentId" placeholder="รหัสนักเรียน">
-            <button onclick="login()">เข้าสู่ระบบ</button>
+            <button id="loginButton">เข้าสู่ระบบ</button>
         </div>
         <div id="voting" style="display: none;">
             <h2>โหวตหัวข้อ</h2>
@@ -19,10 +20,9 @@
         </div>
         <div id="results">
             <h2>ผลการโหวต</h2>
-            <div id="chart"></div>
+            <canvas id="chart"></canvas>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
